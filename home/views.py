@@ -8,10 +8,14 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 def index(request):
 
+    context = {
+        "variable": "I am a variable"
+    }
+
     # return HttpResponse("Hello, World!")
 
     # Render the index.html file in the templates folder
-    return render(request, "index.html")
+    return render(request, "index.html", context)
 
 
 def about(request):
