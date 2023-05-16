@@ -15,28 +15,20 @@ def index(request):
         "variable3": "I am variable3",
     }
 
-    # return HttpResponse("Hello, World!")
-
     # Render the index.html file in the templates folder
     return render(request, "index.html", context)
 
 
 def about(request):
 
-    # return HttpResponse("Welcome to the About Page")
-
     return render(request, "about.html")
 
 
 def services(request):
 
-    # return HttpResponse("Welcome to the Services Page")
-
     return render(request, "services.html")
 
 
 def contact(request):
-
-    # return HttpResponse("Welcome to the Contact Page")
 
     return render(request, "contact.html")
