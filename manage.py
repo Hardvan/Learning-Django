@@ -3,6 +3,9 @@
 import os
 import sys
 
+# ? Start the server:
+# python manage.py runserver
+
 
 def main():
     """Run administrative tasks."""
