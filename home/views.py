@@ -8,8 +8,11 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 def index(request):
 
+    # context is a dictionary that contains variables that are passed to the index.html file
     context = {
-        "variable": "I am a variable"
+        "variable1": "I am variable1",
+        "variable2": "I am variable2",
+        "variable3": "I am variable3",
     }
 
     # return HttpResponse("Hello, World!")
