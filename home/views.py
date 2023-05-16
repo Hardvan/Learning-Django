@@ -22,12 +22,21 @@ def index(request):
 
 
 def about(request):
-    return HttpResponse("Welcome to the About Page")
+
+    # return HttpResponse("Welcome to the About Page")
+
+    return render(request, "about.html")
 
 
 def services(request):
-    return HttpResponse("Welcome to the Services Page")
+
+    # return HttpResponse("Welcome to the Services Page")
+
+    return render(request, "services.html")
 
 
 def contact(request):
-    return HttpResponse("Welcome to the Contact Page")
+
+    # return HttpResponse("Welcome to the Contact Page")
+
+    return render(request, "contact.html")
