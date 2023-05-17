@@ -2,6 +2,9 @@ from django.shortcuts import render, HttpResponse
 from datetime import datetime
 from home.models import Contact
 
+# For displaying messages
+from django.contrib import messages
+
 # render is used for static files
 
 # Type /static/test.txt to see the contents of test.txt in the browser
@@ -16,6 +19,8 @@ def index(request):
         "variable2": "I am variable2",
         "variable3": "I am variable3",
     }
+
+    # messages.success(request, "This is a test message")
 
     # Render the index.html file in the templates folder
     return render(request, "index.html", context)
@@ -46,5 +51,7 @@ def contact(request):
 
         # Save the contact object to the database
         contact.save()
+
+        messages.success(request, "Your message has been sent!")
 
     return render(request, "contact.html")
