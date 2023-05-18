@@ -78,3 +78,7 @@ The project provides the following pages:
 - **About**: Provides information about the company.
 - **Services**: Shows a list of services offered.
 - **Contact**: Allows users to submit a contact form that is stored in the database.
+
+## Deployment
+
+The website is deployed on [PythonAnywhere](https://www.pythonanywhere.com/).
